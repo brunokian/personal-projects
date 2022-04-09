@@ -7,7 +7,6 @@
 
 #naruto-image {
     width: 100px;
-    transform: scaleX(-1);
     margin-left: 1px;
     position: absolute;
 }
@@ -19,6 +18,7 @@
 
 #sasuke-image {
     width: 100px;
+    transform: scaleX(-1);
 }
 
 #campo-de-corrida {

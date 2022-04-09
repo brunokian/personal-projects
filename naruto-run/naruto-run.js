@@ -13,16 +13,27 @@ trofeu.style.marginLeft = `${meioDoCampo}px`
 function startRunning() {
     naruto.style.marginLeft = parseInt(naruto.style.marginLeft) + Math.random()*50 + 'px'
     console.log(parseInt(naruto.style.marginLeft))
+    sasuke.style.marginLeft = parseInt(sasuke.style.marginLeft) - Math.random()*50 + 'px'
+
+    if(parseInt(naruto.style.marginLeft) > (window.innerWidth / 2) - 80) {
+        alert ('NARUTO É O VERCEDOR!!!')
+        resetGame()
+    } 
+
+    if(parseInt(sasuke.style.marginLeft) < (window.innerWidth / 2)) {
+        alert ('SASUKE É O VENCEDOR!!!, mas continua sendo um personagem lixo')
+        resetGame()
+    }
+}
 
 function resetGame() {
     naruto.style.marginLeft = '1px'
+    sasuke.style.marginLeft = `${fimDoCampo}px`
 }
 
-    if(parseInt(naruto.style.marginLeft) > (window.innerWidth / 2) - 30) {
-        alert ('NARUTO É O VERCEDOR!!!')
-        naruto.style.marginLeft = '1px'
-    }
-}
+
+    
+ 
 
 startButton.addEventListener('click', startRunning)
 
