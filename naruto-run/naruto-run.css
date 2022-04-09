@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#naruto-image {
+    width: 100px;
+    transform: scaleX(-1);
+    margin-left: 1px;
+    position: absolute;
+}
+
+#trofeu-duolingo-image {
+    width: 80px;
+    position: absolute;
+}
+
+#sasuke-image {
+    width: 100px;
+}
+
+#campo-de-corrida {
+    /* border-style: solid;
+    border-color: black;
+    border-width: 10px; */
+    margin-top: 100px;
+}
+
+#start-button {
+    border-width: 1px;
+    border-style: solid;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
